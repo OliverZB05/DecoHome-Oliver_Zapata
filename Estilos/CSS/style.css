@@ -1,0 +1,738 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "FontT";
+  src: url("../Fonts/TangoSans_Italic.ttf"); }
+
+@font-face {
+  font-family: "FontP";
+  src: url("../Fonts/RomanSerif.ttf"); }
+
+.Container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-areas: " Container__row1" " Container__Content" " Container__row2";
+  grid-template-rows: 80px 1fr 80px; }
+  .Container .Container__row1 {
+    grid-area: Container__row1;
+    background-image: linear-gradient(to right, #216ee2 20%, #44b1f0); }
+    .Container .Container__row1 .row1__LogoHeader {
+      height: 75px;
+      width: 300px;
+      background-image: url("../IMG/LogoHeader.png");
+      position: relative;
+      left: 10px;
+      top: 2px; }
+  .Container .Container__Content {
+    grid-area: Container__Content;
+    display: grid;
+    grid-template-areas: " Content__space1 Content__space1" " Content__rowProducts1 Content__rowProducts1" " Content__space2 Content__space2" " Content__rowProducts2 Content__rowProducts2" " Content__space3 Content__space3" " Content__rowProducts3 Content__rowProducts3" " Content__space4 Content__space4" " Content__rowShoppingCart Content__rowShoppingCart" " Content__space5 Content__space5";
+    grid-template-rows: 55px 316px 52px 317px 52px 317px 20px 1fr 15px; }
+    .Container .Container__Content .Content__space1 {
+      grid-area: Content__space1;
+      background-color: #ada6a6; }
+      .Container .Container__Content .Content__space1 .TitleProducts {
+        margin-top: 10px;
+        margin-left: 8px;
+        font-size: 40px;
+        font-family: "FontT"; }
+    .Container .Container__Content .Content__rowProducts1 {
+      grid-area: Content__rowProducts1;
+      background-color: #7e7777;
+      overflow-x: scroll;
+      overflow-y: hidden; }
+      .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 {
+        height: 300px;
+        width: 2000px;
+        display: flex; }
+        .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card {
+          height: 250px;
+          width: 210px;
+          border-radius: 20px;
+          margin-top: 22px;
+          margin-left: 36px;
+          background-image: linear-gradient(to bottom, #d1d1d1 63%, #b4afaf); }
+          .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .IMGCard0 {
+            background-image: url("../IMG/IMG_Hogar/Silla de oficina[1].png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .IMGCard1 {
+            background-image: url("../IMG/IMG_Hogar/Lámpara de escritorio[2].png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .IMGCard2 {
+            background-image: url("../IMG/IMG_Hogar/Litera[3].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .IMGCard3 {
+            background-image: url("../IMG/IMG_Hogar/Silla gamer[4].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .IMGCard4 {
+            background-image: url("../IMG/IMG_Hogar/Mueble[5].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .IMGCard5 {
+            background-image: url("../IMG/IMG_Hogar/Juego de comedor[6].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .IMGCard6 {
+            background-image: url("../IMG/IMG_Hogar/Estantería[7].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .IMGCard7 {
+            background-image: url("../IMG/IMG_Hogar/Closet[8].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .TextCard {
+            font-size: 18px;
+            font-family: "FontT";
+            margin-top: 8px;
+            margin-left: 3px; }
+          .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .TextPrice {
+            font-size: 25px;
+            font-family: "FontP";
+            font-weight: 800;
+            color: black;
+            margin-top: 3px;
+            margin-left: 3px; }
+          .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .RowFlex {
+            height: 42px;
+            width: 100%;
+            background-color: rgba(0, 128, 0, 0);
+            display: flex;
+            justify-content: center; }
+            .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .RowFlex .ButtonPay-1 {
+              height: 36px;
+              width: 85px;
+              background-color: #0b67f1;
+              border: 2.5px solid #0d53bb;
+              border-radius: 15px;
+              cursor: pointer; }
+              .Container .Container__Content .Content__rowProducts1 .SectionScroll-1 .rowProducts1__card .RowFlex .ButtonPay-1 .TextButton {
+                font-size: 14px;
+                font-family: "FontT";
+                color: white; }
+    .Container .Container__Content .Content__space2 {
+      grid-area: Content__space2;
+      background-color: #ada6a6; }
+      .Container .Container__Content .Content__space2 .TitleProducts {
+        margin-top: 10px;
+        margin-left: 8px;
+        font-size: 40px;
+        font-family: "FontT"; }
+    .Container .Container__Content .Content__rowProducts2 {
+      grid-area: Content__rowProducts2;
+      background-color: #7e7777;
+      overflow-x: scroll;
+      overflow-y: hidden; }
+      .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 {
+        height: 300px;
+        width: 2000px;
+        display: flex; }
+        .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card {
+          height: 250px;
+          width: 210px;
+          border-radius: 20px;
+          margin-top: 22px;
+          margin-left: 36px;
+          background-image: linear-gradient(to bottom, #d1d1d1 63%, #b4afaf); }
+          .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .IMGCard2--8 {
+            background-image: url("../IMG/IMG_Cocina/Licuadora[1].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .IMGCard2--9 {
+            background-image: url("../IMG/IMG_Cocina/Microondas[2].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .IMGCard2--10 {
+            background-image: url("../IMG/IMG_Cocina/Horno[3].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .IMGCard2--11 {
+            background-image: url("../IMG/IMG_Cocina/Juego de cubiertos[4].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .IMGCard2--12 {
+            background-image: url("../IMG/IMG_Cocina/Juego de utencilios[5].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .IMGCard2--13 {
+            background-image: url("../IMG/IMG_Cocina/Batidora[6].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .IMGCard2--14 {
+            background-image: url("../IMG/IMG_Cocina/Cafetera[7].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .IMGCard2--15 {
+            background-image: url("../IMG/IMG_Cocina/Mortero de marmol[8].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .TextCard {
+            font-size: 18px;
+            font-family: "FontT";
+            margin-top: 8px;
+            margin-left: 3px; }
+          .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .TextPrice {
+            font-size: 25px;
+            font-family: "FontP";
+            font-weight: 800;
+            color: black;
+            margin-top: 3px;
+            margin-left: 3px; }
+          .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .RowFlex {
+            height: 42px;
+            width: 100%;
+            background-color: rgba(0, 128, 0, 0);
+            display: flex;
+            justify-content: center; }
+            .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .RowFlex .ButtonPay-2 {
+              height: 36px;
+              width: 85px;
+              background-color: #0b67f1;
+              border: 2.5px solid #0d53bb;
+              border-radius: 15px;
+              cursor: pointer; }
+              .Container .Container__Content .Content__rowProducts2 .SectionScroll-2 .rowProducts2__card .RowFlex .ButtonPay-2 .TextButton {
+                font-size: 14px;
+                font-family: "FontT";
+                color: white; }
+    .Container .Container__Content .Content__space3 {
+      grid-area: Content__space3;
+      background-color: #ada6a6; }
+      .Container .Container__Content .Content__space3 .TitleProducts {
+        margin-top: 10px;
+        margin-left: 8px;
+        font-size: 40px;
+        font-family: "FontT"; }
+    .Container .Container__Content .Content__rowProducts3 {
+      grid-area: Content__rowProducts3;
+      background-color: #7e7777;
+      overflow-x: scroll;
+      overflow-y: hidden; }
+      .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 {
+        height: 300px;
+        width: 2000px;
+        display: flex; }
+        .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card {
+          height: 250px;
+          width: 210px;
+          border-radius: 20px;
+          margin-top: 22px;
+          margin-left: 36px;
+          background-image: linear-gradient(to bottom, #d1d1d1 63%, #b4afaf); }
+          .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .IMGCard3--16 {
+            background-image: url("../IMG/IMG_Electrodomesticos/Audífonos Inalámbricos[1].png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .IMGCard3--17 {
+            background-image: url("../IMG/IMG_Electrodomesticos/Regleta[2].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .IMGCard3--18 {
+            background-image: url("../IMG/IMG_Electrodomesticos/Audífonos[3].png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .IMGCard3--19 {
+            background-image: url("../IMG/IMG_Electrodomesticos/Aro De Luz Led[4].png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .IMGCard3--20 {
+            background-image: url("../IMG/IMG_Electrodomesticos/Joystick[5].png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .IMGCard3--21 {
+            background-image: url("../IMG/IMG_Electrodomesticos/Cornetas[6].png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .IMGCard3--22 {
+            background-image: url("../IMG/IMG_Electrodomesticos/Batería Portátil[7].jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .IMGCard3--23 {
+            background-image: url("../IMG/IMG_Electrodomesticos/Reloj inteligente[8].png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 140px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: blue; }
+          .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .TextCard {
+            font-size: 18px;
+            font-family: "FontT";
+            margin-top: 8px;
+            margin-left: 3px; }
+          .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .TextPrice {
+            font-size: 25px;
+            font-family: "FontP";
+            font-weight: 800;
+            color: black;
+            margin-top: 3px;
+            margin-left: 3px; }
+          .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .RowFlex {
+            height: 42px;
+            width: 100%;
+            background-color: rgba(0, 128, 0, 0);
+            display: flex;
+            justify-content: center; }
+            .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .RowFlex .ButtonPay-3 {
+              height: 36px;
+              width: 85px;
+              background-color: #0b67f1;
+              border: 2.5px solid #0d53bb;
+              border-radius: 15px;
+              cursor: pointer; }
+              .Container .Container__Content .Content__rowProducts3 .SectionScroll-3 .rowProducts3__card .RowFlex .ButtonPay-3 .TextButton {
+                font-size: 14px;
+                font-family: "FontT";
+                color: white; }
+    .Container .Container__Content .Content__space4 {
+      grid-area: Content__space4;
+      background-image: linear-gradient(to bottom, #dfdddd 100%, #b4afaf); }
+    .Container .Container__Content .Content__rowShoppingCart {
+      grid-area: Content__rowShoppingCart;
+      background-image: linear-gradient(to bottom, #dfdddd 23%, #b4afaf);
+      overflow-x: hidden;
+      overflow-y: hidden; }
+      .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContentFlex {
+        display: flex;
+        justify-content: center; }
+        .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContentFlex .ContentFlex__SectionShoppingCart {
+          height: 90px;
+          width: 1300px;
+          border-radius: 15px;
+          border: 4px solid #064791;
+          background-color: #0066ff;
+          background-image: linear-gradient(to top, rgba(0, 140, 255, 0.699) 5%, #0066ff); }
+          .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContentFlex .ContentFlex__SectionShoppingCart .SectionShoppingCart__Text {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 18px;
+            font-family: "FontT";
+            color: white; }
+      .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__FormSection {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center; }
+        .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__FormSection .FormSection__ContainerForm {
+          height: 80px;
+          width: 900px;
+          border: solid rgba(0, 0, 0, 0.651) 3px;
+          border-radius: 20px;
+          background-image: linear-gradient(to top, rgba(129, 131, 133, 0.466), #acacac);
+          display: grid;
+          grid-template-areas: " ContainerForm__Row1 ContainerForm__Row1" " ContainerForm__Row2 ContainerForm__Row2";
+          grid-template-rows: 1fr 1fr; }
+          .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__FormSection .FormSection__ContainerForm .ContainerForm__Row1 {
+            grid-area: ContainerForm__Row1;
+            background-color: rgba(255, 0, 0, 0);
+            display: grid;
+            grid-template-areas: " Row1__Column1 Row1__Column2";
+            grid-template-columns: 1fr 1fr; }
+            .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__FormSection .FormSection__ContainerForm .ContainerForm__Row1 .Row1__Column1 {
+              grid-area: Row1__Column1;
+              background-color: rgba(128, 128, 128, 0); }
+              .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__FormSection .FormSection__ContainerForm .ContainerForm__Row1 .Row1__Column1 .Column1__Text {
+                font-size: 25px;
+                font-family: "FontT";
+                margin-top: 8px;
+                margin-left: 7px;
+                text-align: left; }
+            .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__FormSection .FormSection__ContainerForm .ContainerForm__Row1 .Row1__Column2 {
+              grid-area: Row1__Column2;
+              background-color: rgba(68, 67, 67, 0); }
+          .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__FormSection .FormSection__ContainerForm .ContainerForm__Row2 {
+            grid-area: ContainerForm__Row2;
+            background-color: rgba(9, 109, 223, 0);
+            display: grid;
+            grid-template-areas: " Row2__Column1 Row2__Column2";
+            grid-template-columns: 1fr 1fr; }
+            .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__FormSection .FormSection__ContainerForm .ContainerForm__Row2 .Row2__Column1 {
+              grid-area: Row2__Column1;
+              background-color: rgba(226, 117, 117, 0); }
+              .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__FormSection .FormSection__ContainerForm .ContainerForm__Row2 .Row2__Column1 .Column1__Text {
+                font-size: 25px;
+                font-family: "FontT";
+                margin-top: 8px;
+                margin-left: 7px;
+                text-align: left; }
+            .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__FormSection .FormSection__ContainerForm .ContainerForm__Row2 .Row2__Column2 {
+              grid-area: Row2__Column2;
+              background-color: rgba(145, 59, 59, 0); }
+      .Container .Container__Content .Content__rowShoppingCart table {
+        border-width: 3px 4px 3px 3px;
+        border-color: black;
+        border-style: solid;
+        border-collapse: collapse; }
+      .Container .Container__Content .Content__rowShoppingCart td {
+        border-width: 3px 0px 0px 0px;
+        border-color: black;
+        border-style: solid;
+        border-collapse: collapse; }
+      .Container .Container__Content .Content__rowShoppingCart th {
+        border-width: 0px 3px 0px 0px;
+        border-color: black;
+        border-style: solid;
+        border-collapse: collapse; }
+      .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable {
+        background-color: rgba(255, 0, 0, 0);
+        display: grid;
+        justify-content: center;
+        margin-top: 20px; }
+        .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart {
+          width: 800px;
+          background-color: greenyellow;
+          margin-bottom: 3px; }
+          .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Enumeration {
+            width: 200px;
+            background-color: #3e3d3f; }
+            .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Enumeration .Enumeration__Text {
+              font-size: 25px;
+              font-family: "FontT";
+              text-align: center;
+              color: white;
+              padding-left: 10px;
+              padding-right: 15px; }
+          .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__FirstRow {
+            height: 45px;
+            width: 100%;
+            background-color: white; }
+            .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__FirstRow .FirstRow__Text {
+              font-size: 25px;
+              font-family: "FontT";
+              text-align: center; }
+          .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row {
+            height: 90px;
+            width: 100%;
+            background-color: #0099ff;
+            display: grid;
+            grid-template-areas: " Row__Column1 Row__Column2 Row__Column3";
+            grid-template-columns: 1fr 1fr 1fr; }
+            .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column1 {
+              grid-area: Row__Column1;
+              background-color: #a8a7a7;
+              display: grid;
+              grid-template-areas: " Column1__Row-A"  " Column1__Row-B";
+              grid-template-rows: 1fr 1fr; }
+              .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column1 .Column1__Row-A {
+                grid-area: Column1__Row-A;
+                background-color: rgba(0, 153, 255, 0);
+                border-width: 0px 0px 3px 0px;
+                border-color: black;
+                border-style: solid; }
+                .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column1 .Column1__Row-A .Row-A__Title {
+                  font-size: 25px;
+                  font-family: "FontT";
+                  text-align: center;
+                  margin-top: 10px; }
+              .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column1 .Column1__Row-B {
+                grid-area: Column1__Row-B;
+                background-color: rgba(0, 81, 255, 0);
+                display: flex;
+                justify-content: center; }
+                .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column1 .Column1__Row-B .Row-B__Text {
+                  font-size: 25px;
+                  font-family: "FontT";
+                  margin-top: 10px; }
+                .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column1 .Column1__Row-B .Row-B__PlusButton {
+                  height: 35px;
+                  width: 35px;
+                  background-color: #83f561;
+                  cursor: pointer;
+                  margin-top: 4px;
+                  margin-left: 10px;
+                  border-radius: 10px; }
+                  .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column1 .Column1__Row-B .Row-B__PlusButton .PlusButton__Text {
+                    font-size: 20px;
+                    font-family: "FontT";
+                    margin-right: 3px;
+                    margin-top: 2px; }
+                .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column1 .Column1__Row-B .Row-B__MinusButton {
+                  height: 35px;
+                  width: 35px;
+                  background-color: #ee3f3f;
+                  cursor: pointer;
+                  margin-top: 4px;
+                  margin-left: 2px;
+                  border-radius: 10px; }
+                  .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column1 .Column1__Row-B .Row-B__MinusButton .MinusButton__Text {
+                    font-size: 20px;
+                    font-family: "FontT";
+                    margin-right: 3px;
+                    margin-top: 2px; }
+            .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column2 {
+              grid-area: Row__Column2;
+              background-color: #696868;
+              display: grid;
+              grid-template-areas: " Column2__Row-A"  " Column2__Row-B";
+              grid-template-rows: 1fr 1fr; }
+              .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column2 .Column2__Row-A {
+                grid-area: Column2__Row-A;
+                background-color: rgba(204, 0, 255, 0);
+                border-width: 0px 0px 3px 0px;
+                border-color: black;
+                border-style: solid; }
+                .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column2 .Column2__Row-A .Row-A__Title {
+                  font-size: 25px;
+                  font-family: "FontT";
+                  text-align: center;
+                  margin-top: 10px; }
+              .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column2 .Column2__Row-B {
+                grid-area: Column2__Row-B;
+                background-color: rgba(158, 7, 196, 0); }
+                .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column2 .Column2__Row-B .Row-B__Title {
+                  font-size: 25px;
+                  font-family: "FontT";
+                  text-align: center;
+                  margin-top: 9px; }
+            .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column3 {
+              grid-area: Row__Column3;
+              background-color: #a8a7a7;
+              display: grid;
+              grid-template-areas: " Column3__Row-A"  " Column3__Row-B";
+              grid-template-rows: 1fr 1fr; }
+              .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column3 .Column3__Row-A {
+                grid-area: Column3__Row-A;
+                background-color: rgba(0, 153, 255, 0);
+                border-width: 0px 0px 3px 0px;
+                border-color: black;
+                border-style: solid; }
+                .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column3 .Column3__Row-A .Row-A__Title {
+                  font-size: 25px;
+                  font-family: "FontT";
+                  text-align: center;
+                  margin-top: 10px; }
+              .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column3 .Column3__Row-B {
+                grid-area: Column3__Row-B;
+                background-color: rgba(0, 81, 255, 0); }
+                .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTable .ContainerTable__TableShopingCart .TableShopingCart__Row .Row__Column3 .Column3__Row-B .Row-B__Title {
+                  font-size: 25px;
+                  font-family: "FontT";
+                  text-align: center;
+                  margin-top: 9px; }
+      .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTotalPrice {
+        height: 60px;
+        width: 100%;
+        margin-top: 2px;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 0, 0, 0); }
+        .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTotalPrice .ContainerTotalPrice__TemplateTotalPrice {
+          height: 60px;
+          width: 600px;
+          border: solid rgba(0, 0, 0, 0.651) 3px;
+          border-radius: 20px;
+          background-image: linear-gradient(to top, rgba(129, 131, 133, 0.466), #acacac);
+          display: grid;
+          grid-template-areas: " Column1TotalPrice Column2TotalPrice";
+          grid-template-columns: 200px 390px; }
+          .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTotalPrice .ContainerTotalPrice__TemplateTotalPrice .Column1TotalPrice {
+            grid-area: Column1TotalPrice;
+            background-color: rgba(255, 0, 0, 0); }
+            .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTotalPrice .ContainerTotalPrice__TemplateTotalPrice .Column1TotalPrice .TemplateTotalPrice__Text-1 {
+              font-size: 25px;
+              font-family: "FontT";
+              margin-top: 14px;
+              margin-left: 7px;
+              text-align: left; }
+          .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTotalPrice .ContainerTotalPrice__TemplateTotalPrice .Column2TotalPrice {
+            grid-area: Column2TotalPrice;
+            background-color: rgba(0, 153, 255, 0); }
+            .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerTotalPrice .ContainerTotalPrice__TemplateTotalPrice .Column2TotalPrice .TemplateTotalPrice__Text-2 {
+              font-size: 25px;
+              font-family: "FontT";
+              margin-top: 14px;
+              margin-left: 280px;
+              text-align: left; }
+      .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerSendButton {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 0, 0, 0);
+        margin-top: 8px; }
+        .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerSendButton .SendButton {
+          height: 50px;
+          width: 170px;
+          border-radius: 20px;
+          cursor: pointer;
+          background-color: #45f510; }
+          .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerSendButton .SendButton .SendButton__Text {
+            font-size: 25px;
+            font-family: "FontT"; }
+      .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerDeleteButton {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 0, 0, 0);
+        margin-top: 8px; }
+        .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerDeleteButton .DeleteButton {
+          height: 50px;
+          width: 170px;
+          border-radius: 20px;
+          cursor: pointer;
+          background-color: #f51010; }
+          .Container .Container__Content .Content__rowShoppingCart .rowShoppingCart__ContainerDeleteButton .DeleteButton .DeleteButton__Text {
+            font-size: 25px;
+            font-family: "FontT"; }
+    .Container .Container__Content .Content__space5 {
+      grid-area: Content__space5;
+      background-color: #b4afaf; }
+  .Container .Container__row2 {
+    grid-area: Container__row2;
+    background-color: black; }
+    .Container .Container__row2 .row1__LogoFooter {
+      height: 75px;
+      width: 400px;
+      background-image: url("../IMG/LogoFooter.png");
+      background-color: rgba(255, 0, 0, 0);
+      position: relative;
+      left: 10px;
+      top: 2px; }

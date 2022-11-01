@@ -1,0 +1,146 @@
+// ========== 𝐅𝐨𝐧𝐭-𝐟𝐚𝐜𝐞 ==========
+@font-face {
+    font-family: "FontT";
+    src: url("../Fonts/TangoSans_Italic.ttf");
+}
+
+@font-face {
+    font-family: "FontP";
+    src: url("../Fonts/RomanSerif.ttf");
+}
+// ========== 𝐅𝐨𝐧𝐭-𝐟𝐚𝐜𝐞 ==========
+
+
+// ========== 𝐌𝐢𝐱𝐢𝐧𝐬 ==========
+@mixin TopBorders{  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+@mixin BottomBorders{   
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@mixin Bg{                     
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin SectionScroll{   
+    height: 300px;
+    width: 2000px;
+    display: flex;
+}
+
+@mixin TitleProducts{ 
+    margin-top: 10px;
+    margin-left: 8px;
+    font-size: 40px;
+    font-family: "FontT";
+}
+
+@mixin cards1{ 
+    height: 250px;
+    width: 210px;
+    border-radius: 20px;
+    margin-top: 22px;
+    margin-left: 36px;
+    background-image: linear-gradient(to bottom, rgb(209, 209, 209) 63%, rgb(180, 175, 175));
+}
+
+@mixin cards2{ 
+    height: 250px;
+    width: 210px;
+    border-radius: 20px;
+    margin-top: 22px;
+    margin-left: 50px;
+    background-color: rgba(255, 0, 0, 0);
+    background-image: linear-gradient(to bottom, rgb(209, 209, 209) 63%, rgb(180, 175, 175));
+}
+
+@mixin cards3{ 
+    height: 250px;
+    width: 210px;
+    border-radius: 20px;
+    margin-top: 22px;
+    margin-left: 50px;
+    margin-right: 20px;
+    background-color: rgba(255, 0, 0, 0);
+    background-image: linear-gradient(to bottom, rgb(209, 209, 209) 63%, rgb(180, 175, 175));
+}
+
+@mixin TextCard{ 
+    font-size: 18px;
+    font-family: "FontT";
+    margin-top: 8px;
+    margin-left: 3px;
+}
+
+@mixin IMGCard{ 
+    height: 140px;
+    width: 100%;
+    @include TopBorders;
+    background-color: blue;
+}
+
+@mixin TextPrice{ 
+    font-size: 25px;
+    font-family: "FontP";
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+@mixin RowFlex{ 
+    height: 42px;
+    width: 100%;
+    background-color: rgba(0, 128, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+@mixin ButtonPay{ 
+    height: 36px;
+    width: 85px;
+    background-color: rgb(11, 103, 241);
+    border: 2.5px solid rgb(13, 83, 187);
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+@mixin TextButton{ 
+    font-size: 14px;
+    font-family: "FontT";
+    color: white;
+}
+
+@mixin BordersTable{ 
+    border-width: 0px 0px 3px 0px;
+    border-color: black;
+    border-style: solid;
+}
+
+$Spaces:(    
+    ColorSpace: rgb(173, 166, 166), 
+    ColorSpace4: rgb(190, 192, 191), 
+    ColorRowProducts: rgb(126, 119, 119), 
+    //ColorRowShoppingCart: rgb(190, 192, 191),
+    RowTable1: gray, 
+    RowTable2: lightgrey 
+);
+
+
+$TableShopingCart:(
+    FirstRow: rgb(255, 255, 255),   //map-get($TableShopingCart, FirstRow)
+    Column1: rgba(110, 110, 110, 0.74),    //map-get($TableShopingCart, Column1)
+    Column2: rgba(179, 179, 179, 0),    //map-get($TableShopingCart, Column2)
+    Column3: rgba(77, 77, 77, 0.89),       //map-get($TableShopingCart, Column3)
+    Columns__Text: white            //map-get($TableShopingCart, Columns__Text)
+);
+// ========== 𝐌𝐢𝐱𝐢𝐧𝐬 ==========
+
+
